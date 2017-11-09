@@ -2,7 +2,11 @@ import React, { Component } from 'react'; // temos que fazer import, por que no 
 
 class SearchBar extends Component {
     render() {
-        return <input />
+        return <input onChange={this.onInputChange} />
+    }
+
+    onInputChange(event) {
+        console.log(event)
     }
 }
 
